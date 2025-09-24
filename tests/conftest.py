@@ -5,10 +5,10 @@ from playwright.sync_api import Playwright
 
 @pytest.fixture
 def page(playwright: Playwright):
-    browser = playwright.chromium.launch(headless=False)  # headless=True in CI
+    browser = playwright.chromium.launch(headless=False)
     context = browser.new_context()
     page = context.new_page()
-    page.goto("http://example.com")  # Replace with your actual target URL
+    page.goto("http://example.com")
 
     yield page
 
