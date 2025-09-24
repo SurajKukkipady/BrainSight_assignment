@@ -1,3 +1,9 @@
+#Test scenario
+#If the process status is successful, 
+# then the Download button in Results column should be enabled, 
+# else should be disabled. On clicking the download, 
+# it should download the result successfully.
+
 # tests/test_dashboard.py
 from pages.dashboard_page import DashboardPage
 
